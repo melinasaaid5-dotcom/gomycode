@@ -1,0 +1,41 @@
+# checkpoint num 2
+# question 1
+list = [2, 3, 6]
+product = 1
+for i in list:
+    product *= i
+print(product)
+
+# question 2
+list = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+list.sort(key=lambda x: x[1])
+print(list)
+
+# question 3
+d1 = {"a": 100, "b": 200, "c": 300}
+d2 = {"a": 300, "b": 200, "d": 400}
+for i in d2:
+    if i in d1:
+        d1[i] += d2[i]
+if i not in d1:
+    d1[i] = d2[i]
+print(d1)
+
+# question 4
+numbers = {1, 2, 3, 4, 5, 6, 7, 8}
+squared_numbers = {i: i**2 for i in numbers}
+print(squared_numbers)
+
+# question 5
+list = [('item1', 12.20), ('item2', 15.10), ('item3', 24.5)]
+list.sort(key=lambda x: x[1], reverse=True)
+print(list)
+
+# question 6
+set = {0, 1, 2, 3, 4}
+for i in set:
+    print(i)
+set.add(5)
+print('after adding 5:', set)
+set.remove(3)
+print('after removing 3:', set)
